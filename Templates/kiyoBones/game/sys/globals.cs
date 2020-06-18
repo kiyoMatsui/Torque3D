@@ -33,7 +33,7 @@ $pref::Input::JoystickEnabled = 0;
 // ----------------------------------------------------------------------------
 // Video Preferences
 // ----------------------------------------------------------------------------
-
+$pref::Video::displayDevice ="OpenGL";
 // Set directory paths for various data or default images.
 $pref::Video::ProfilePath = "sys/gfxprofiles";
 $pref::Video::missingTexturePath = "art/images/missingTexture.png";

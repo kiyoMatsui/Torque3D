@@ -1,11 +1,11 @@
 // Display a splash window immediately to improve app responsiveness before
-// engine is initialized and main window created
-displaySplashWindow("splash.png");
+// engine is initialized and main window created (only windows)
+displaySplashWindow("splash.png"); //closeSplashWindow(); 
 
-// Console does something.
-setLogMode(2);
-// Disable script trace.
-trace(false);
+//1=keep log file open while writing. 1= save on each log
+setLogMode(2); 
+//  will trace and log to console the invocation and returns of script functions.
+trace(true);
 
 //-----------------------------------------------------------------------------
 // Load up scripts to initialise subsystems.

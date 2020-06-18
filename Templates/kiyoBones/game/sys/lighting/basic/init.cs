@@ -51,7 +51,7 @@ singleton ShaderData( BL_ProjectedShadowShaderData )
 
 singleton CustomMaterial( BL_ProjectedShadowMaterial )
 {
-   sampler["inputTex"] = "$miscbuff";
+   //sampler["inputTex"] = "$miscbuff";
  
    shader = BL_ProjectedShadowShaderData;
    stateBlock = BL_ProjectedShadowSBData;

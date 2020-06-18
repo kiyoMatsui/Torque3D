@@ -24,7 +24,7 @@ function initRenderManager()
 {
    assert( !isObject( DiffuseRenderPassManager ), "initRenderManager() - DiffuseRenderPassManager already initialized!" );
         
-	new RenderPassManager( DiffuseRenderPassManager );
+	new RenderPassManager( DiffuseRenderPassManager ); //detail found in renderPassManager.cpp 
 	
 	// This token, and the associated render managers, ensure that driver MSAA 
 	// does not get used for Advanced Lighting renders.  The 'AL_FormatResolve' 
@@ -90,11 +90,11 @@ function initRenderManager()
 /// This post effect is used to copy data from the non-MSAA back-buffer to the
 /// device back buffer (which could be MSAA). It must be declared here so that
 /// it is initialized when 'AL_FormatToken' is initialzed.
-singleton GFXStateBlockData( AL_FormatTokenState : PFX_DefaultStateBlock )
-{
-   samplersDefined = true;
-   samplerStates[0] = SamplerClampPoint;
-};
+//singleton GFXStateBlockData( AL_FormatTokenState : PFX_DefaultStateBlock )
+//{
+//   samplersDefined = true;
+//   samplerStates[0] = SamplerClampPoint;
+//};
 
 singleton PostEffect( AL_FormatCopy )
 {
